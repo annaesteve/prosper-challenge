@@ -2187,8 +2187,13 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "fastapi" },
+    { name = "httpx" },
+    { name = "pipecat-ai", extra = ["elevenlabs", "openai", "silero", "webrtc"] },
     { name = "pyright" },
+    { name = "python-dotenv" },
     { name = "ruff" },
+    { name = "uvicorn", extra = ["standard"] },
 ]
 
 [package.metadata]
@@ -2199,8 +2204,13 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "fastapi" },
+    { name = "httpx" },
+    { name = "pipecat-ai", extras = ["elevenlabs", "openai", "silero", "webrtc"] },
     { name = "pyright", specifier = ">=1.1.404,<2" },
+    { name = "python-dotenv" },
     { name = "ruff", specifier = ">=0.12.11,<1" },
+    { name = "uvicorn", extras = ["standard"] },
 ]
 
 [[package]]

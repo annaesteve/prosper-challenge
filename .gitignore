@@ -36,3 +36,4 @@ htmlcov/
 # Misc
 *.log
 .cache/
+.env

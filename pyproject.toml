@@ -12,6 +12,11 @@ dependencies = [
 dev = [
     "pyright>=1.1.404,<2",
     "ruff>=0.12.11,<1",
+    "pipecat-ai[elevenlabs,openai,silero,webrtc]",
+    "fastapi",
+    "uvicorn[standard]",
+    "httpx",
+    "python-dotenv"
 ]
 
 [tool.ruff]
