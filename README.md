@@ -158,12 +158,3 @@ Force the agent to produce a structured JSON summary at the end of every call:
 
 This summary can be logged and compared against the EHR state to detect discrepancies (e.g. the agent said it booked something but the EHR shows nothing).
 
----
-
-## What I would tackle next
-In priority order I would do the following:
-1. **Slot regeneration background job** : without this, available slots run out after 7 days and the bot cannot book anything.
-2. **EHR health check + circuit breaker** : prevents silent failures that confuse patients.
-3. **Scripted conversation test suite** : the single highest-value reliability investment; catches most regressions in CI without a real phone call.
-4. **Streaming TTS optimisation** : the biggest perceived latency win for the patient experience.
-6. **Async SQLite (`aiosqlite`)** : prevents DB queries from blocking the FastAPI event loop under load.
